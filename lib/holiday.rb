@@ -29,7 +29,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, items|
       caps = []
       holiday.to_s.split(" ").each do |x|
-        caps << x.capitalize 
+        caps << x.capitalize
       end
       puts caps.join(" ") + ": #{items.to_s.capitalize}"
     end

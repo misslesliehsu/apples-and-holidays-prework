@@ -35,8 +35,9 @@ def all_supplies_in_holidays(holiday_hash)
       caps_items = []
       items.split(", ").each do |item|
         caps_items << item.capitalize
-        print caps_items.join(", ") 
+        print caps_items.join(", ")
       end
+    end
   end
 end
   # iterate through holiday_hash and print items such that your readout resembles:

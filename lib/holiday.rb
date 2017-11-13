@@ -24,15 +24,15 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, holiday|
+  holiday_hash.each do |season, holidays|
     puts season.to_s.capitalize + ":"
-    holiday.each do |holiday, items|
+    holidays.each do |holiday, items|
       caps_holiday = []
-      holiday.to_s.split(" ").each do |word_in_holiday|
+      holiday.split(" ").each do |word_in_holiday|
         caps_holiday << word_in_holiday.capitalize
       end
       print caps_holiday.join(", ") + ": "
-      print items.join(", ")
+      puts items.join(", ")
     end
   end
 end

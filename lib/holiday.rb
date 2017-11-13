@@ -32,10 +32,7 @@ def all_supplies_in_holidays(holiday_hash)
         caps_holiday << word_in_holiday.capitalize
       end
       print caps_holiday.join(", ") + ": "
-      caps_items = []
-      items.each do |item|
-        print item.capitalize + ", "
-      end
+      print items.join(", ")    
     end
   end
 end
